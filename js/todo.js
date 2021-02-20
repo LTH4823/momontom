@@ -69,9 +69,9 @@ function paintPending(text){
     const pend_span = document.createElement("span");
     const newid =  pendWork.length + 1;
     pend_li.id = newid;
-    pend_delbtn.innerText = "❌";
+    pend_delbtn.className = "fas fa-times";    
     pend_delbtn.addEventListener("click", removePending);
-    pend_checkbtn.innerText = "✔";
+    pend_checkbtn.className = "fas fa-share";  
     pend_checkbtn.addEventListener("click",Checkfun);
     pend_span.innerText = text;
     pend_li.appendChild(pend_span);
@@ -94,9 +94,9 @@ function paintFinished(text){
     const finish_span = document.createElement("span");
     const newid =  finishWork.length + 1;
     finish_li.id = newid;
-    finish_delbtn.innerText = "❌";
+    finish_delbtn.className = "fas fa-times"; 
     finish_delbtn.addEventListener("click", removeFinish);
-    finish_backbtn.innerText = "◀";
+    finish_backbtn.className = "fas fa-undo-alt"; 
     finish_backbtn.addEventListener("click",backfun);
     finish_span.innerText = text;
     finish_li.appendChild(finish_span);
