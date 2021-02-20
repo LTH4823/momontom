@@ -1,7 +1,7 @@
 const pending = document.querySelector(".js-pending"),
 finished = document.querySelector(".js-finished"),
-jsform = document.querySelector(".js-form"),
-input = jsform.querySelector("input");
+todojsform = document.querySelector(".js-form-todo"),
+input = todojsform.querySelector("input");
 
 const DEFAULT_PENDING = "PENDING";
 const DEFAULT_FINISHED = "FINISHED"
@@ -10,7 +10,6 @@ let pendWork = [],
 finishWork = [];
 
 function removePending(event){
-    console.dir(event.target);
     const btn = event.target;
     const li = btn.parentNode;
     pending. removeChild(li);
@@ -151,7 +150,7 @@ function handleSubmit(event){
 function init(){
     loadPeding();
     loadFinish();
-    jsform.addEventListener("submit", handleSubmit);
+    todojsform.addEventListener("submit", handleSubmit);
 }
 
 init();
