@@ -2,7 +2,7 @@ const nameform = document.querySelector(".js-form-name"),
 input = nameform.querySelector("input"),
 greeting = document.querySelector(".js-greetings");
 
-const USER_LS="currentUser",
+const USER_LS="CURRENT_USER",
 SHOWING_CN= "showing";
 
 function saveName(text){
@@ -17,12 +17,11 @@ function handleSubmit(event){
 }
 
 function askForName(){
-    nameform.classList.add(SHOWING_CN);
     nameform.addEventListener("submit",handleSubmit);
 }
 
 function paintGreeting(text){
-    nameform.classList.remove(SHOWING_CN);
+    nameform.classList.add("hide");
     greeting.classList.add(SHOWING_CN);
     greeting.innerText=`hello ${text}`;
 }
