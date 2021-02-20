@@ -1,0 +1,15 @@
+.nav-bar {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar audio {
+  margin: 20px;
+}
+
+.nav-bar p {
+  margin: 20px;
+}

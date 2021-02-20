@@ -1,4 +1,8 @@
 @import "reset.css";
+@import "navbar.css";
+@import "jsclock.css";
+@import "jsname.css";
+@import "jstodo.css";
 
 .showing {
   display: block;
@@ -6,4 +10,16 @@
 
 .hide {
   display: none;
+}
+
+.main {
+  height: 100vh;
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
 }

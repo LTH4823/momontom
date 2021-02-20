@@ -3,7 +3,7 @@ input = nameform.querySelector("input"),
 greeting = document.querySelector(".js-greetings");
 
 const USER_LS="CURRENT_USER",
-SHOWING_CN= "showing";
+SHOWING_CN= "name";
 
 function saveName(text){
     localStorage.setItem(USER_LS,text);
@@ -23,7 +23,7 @@ function askForName(){
 function paintGreeting(text){
     nameform.classList.add("hide");
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText=`hello ${text}`;
+    greeting.innerText=`${text}`;
 }
 
 function loadName(){
