@@ -1,7 +1,7 @@
 const pending = document.querySelector(".js-pending"),
 finished = document.querySelector(".js-finished"),
 todojsform = document.querySelector(".js-form-todo"),
-input = todojsform.querySelector("input");
+todoinput = todojsform.querySelector("input");
 
 const DEFAULT_PENDING = "PENDING";
 const DEFAULT_FINISHED = "FINISHED"
@@ -143,7 +143,7 @@ function loadFinish(){
 
 function handleSubmit(event){
     event.preventDefault();
-    const currentValue = input.value;
+    const currentValue = todoinput.value;
     paintPending(currentValue);
 }
 
