@@ -5,7 +5,7 @@ todojsform = document.querySelector(".js-form-todo"),
 todoinput = todojsform.querySelector("input");
 
 const music = document.querySelector(".nav-bar_music");
-console.dir(music);
+
 
 const DEFAULT_PENDING = "PENDING";
 const DEFAULT_FINISHED = "FINISHED"
