@@ -1,7 +1,11 @@
-const pending = document.querySelector(".js-pending"),
+const todoarea = document.querySelector(".todoarea"),
+pending = document.querySelector(".js-pending"),
 finished = document.querySelector(".js-finished"),
 todojsform = document.querySelector(".js-form-todo"),
 todoinput = todojsform.querySelector("input");
+
+const music = document.querySelector(".nav-bar_music");
+console.dir(music);
 
 const DEFAULT_PENDING = "PENDING";
 const DEFAULT_FINISHED = "FINISHED"
@@ -145,12 +149,18 @@ function handleSubmit(event){
     event.preventDefault();
     const currentValue = todoinput.value;
     paintPending(currentValue);
+    currentValue = null;
+}
+
+function inputclear(){
+    todoinput.value="";
 }
 
 function init(){
     loadPeding();
     loadFinish();
     todojsform.addEventListener("submit", handleSubmit);
+    todojsform.addEventListener("submit", inputclear);
 }
 
 init();

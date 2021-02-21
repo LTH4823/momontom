@@ -1,21 +1,19 @@
 const main = document.querySelector(".main");
-
 IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
-    
-    // const image = new Image();
-    // image.src = `/img/img${imgNumber + 1}.jpg`;
-    // image.classList.add("bgImage");
-    // image.style.backgroundSize = "cover";
-    // image.style.backgroundPosition = "center";
-    // body.prepend(image);
-    
+    main.classList.add("bgimg");
+    const bgimg = document.querySelector(".bgimg");
+    bgimg.style.backgroundImage = `url(../img/img${imgNumber+1}.jpg)`;
+    bgimg.style.backgroundSize = "cover";
+    bgimg.style.backgroundPosition = "center";
+    console.log(imgNumber);
 }
 
 
 function genRandom(){
     const number = Math.floor(Math.random()*IMG_NUMBER);
+    console.log(number);
     return number;
 }
 

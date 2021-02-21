@@ -18,6 +18,7 @@ function handleSubmit(event){
 
 function askForName(){
     nameform.addEventListener("submit",handleSubmit);
+    nameform.addEventListener("submit",showTodo);
 }
 
 function paintGreeting(text){
@@ -30,9 +31,19 @@ function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
     if(currentUser===null){
         askForName();
+        hideTodo();
     }else{
-        paintGreeting(currentUser); 
+        paintGreeting(currentUser);
+        showTodo(); 
     }
+}
+
+function showTodo(){
+    todoarea.style.display="flex";
+}
+
+function hideTodo(){
+    todoarea.style.display="none";
 }
 
 function init(){

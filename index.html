@@ -17,7 +17,6 @@
 <body>
     <div class="main">
         <nav class="nav-bar">
-            <audio class="nav-bar_music" controls loop src="music/music.mp3"></audio>
             <div class="nav-bar_weather">
                 <p>To Day Weather is ?</p>
                 <p class="js-weather weather"></p>
@@ -31,19 +30,23 @@
         <form class="js-form-name">
             <input class="name-input" type="text" tpye="text" placeholder="What Is Your Name?">
         </form>
-
-
-        <form class="js-form-todo">
-            <input type="text" placeholder="Waht your ToDo?">
-        </form>
-
-        <h2 class="sub-title">Pending</h2>
-        <ul class="js-pending">
-        </ul>
-
-        <h2 class="sub-title">Finished</h2>
-        <ul class="js-finished">
-        </ul>
+        <div class="todoarea">
+            <form class="js-form-todo">
+                <input type="text" placeholder="What your ToDo?">
+            </form>
+            <div class="js-subs">
+                <div class="js-subs-pending">
+                    <h2 class="sub-title">Pending</h2>
+                    <ul class="js-pending">
+                    </ul>
+                </div>
+                <div class="js-subs-finished">
+                    <h2 class="sub-title">Finished</h2>
+                    <ul class="js-finished">
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

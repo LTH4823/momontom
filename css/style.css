@@ -14,12 +14,10 @@
 
 .main {
   height: 100vh;
-  background-image: url(../img/img1.jpg);
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: #ffffff;
+  color: rgb(47, 113, 255);
 }
