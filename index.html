@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="js/todo.js" defer></script>
     <script src="js/clock.js"defer></script>
     <script src="js/gretting.js" defer></script>
@@ -16,8 +17,11 @@
 <body>
     <div class="main">
         <nav class="nav-bar">
-            <audio controls src=""></audio>
-            <p class="js-weather weather"></p>
+            <audio class="nav-bar_music" controls loop src="music/music.mp3"></audio>
+            <div class="nav-bar_weather">
+                <p>To Day Weather is ?</p>
+                <p class="js-weather weather"></p>
+            </div>
         </nav>
         <div class="js-clock">
             <h1 class="">00:00:00</h1>

@@ -1,9 +1,9 @@
 const main = document.querySelector(".main");
 
-console.log(main);
 IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
+    
     // const image = new Image();
     // image.src = `/img/img${imgNumber + 1}.jpg`;
     // image.classList.add("bgImage");
